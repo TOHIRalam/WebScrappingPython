@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(white, rgb(211, 211, 211));
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#cont1 {
+    border-right: 3px dotted orange;
+}
+
+.titleContainer {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    background-image: url("1926.jpg");
+    background-size: cover;
+    color: rgb(255, 196, 119);
+}
+
+.container {
+    height: 40em;
+    width: 50em;
+    overflow: scroll;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(255, 242, 172);
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+
+ul {
+    width: 40em;
+    margin: 2em auto;
+}
+
+li {
+    font-size: 25px;
+    list-style: none;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+
+li:hover {
+    animation-name: listAnimation;
+    background-color: rgb(255, 94, 0);
+    animation-duration: 2s;
+}
+
+@keyframes listAnimation {
+    0% {background-color: rgb(255, 130, 58);}
+    100% {background-color: rgb(255, 38, 0);}
+}
